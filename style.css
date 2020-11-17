@@ -18,6 +18,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-align: center;
 }
 
 body {
@@ -32,16 +33,12 @@ body {
 }
 
 ::-webkit-scrollbar {
-  /*width: 1rem;*/
   width: 0;
 }
-::-webkit-scrollbar-track {
-  background: var(--dark);
-}
-::-webkit-scrollbar-thumb {
-  background-color: var(--mid);
-  border-radius: 20px;
-  border: 2px solid var(--dark);
+
+nav a:hover {
+  transition: 100ms;
+  color: var(--signal);
 }
 
 
@@ -104,11 +101,6 @@ body {
     transition: filter 600ms ease-out;
   }
   
-  nav a:hover {
-    transition: 100ms;
-    color: var(--signal);
-  }
-  
 }
 
 .nav-toggle {
@@ -167,11 +159,6 @@ body {
     transition: filter 600ms ease-out;
   }
   
-  nav a:hover {
-    transition: 100ms;
-    color: var(--signal);
-  }
-  
   #hamburger {
     visibility: visible;
   }
@@ -192,11 +179,6 @@ body {
 
 }
 
-main {
-  margin-left: 15vw;
-  padding: 0 15vw;
-}
-
 main h2 {
   margin-top: 5rem;
 }
@@ -204,7 +186,6 @@ main h2 {
 main p {
   margin-top: 2rem;
   line-height: 1.6;
-  max-width: 60ch;
 }
 
 main h2 + P {
@@ -220,10 +201,6 @@ article {
   padding-bottom: 32vh;
 }
 
-p {
-  text-align: justify;
-}
-
 footer {
   margin-top: 8vh;
   padding-top: 4vh;
@@ -235,5 +212,9 @@ footer {
 
 
 #hamburger {
+  color: var(--signal);
+}
+
+.slide {
   color: var(--signal);
 }

@@ -9,11 +9,8 @@
       integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
       crossorigin="anonymous"
     />
-
-    <script src="bkg_img_tag.js"></script>    
-
-    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="util.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="images.css" />
     <!--<title>11-05-2020</title>-->
     <title>Document</title>
@@ -27,46 +24,40 @@
             <nav>
                 <ul>
                     <!--<li><i class="fas fa-hamburger"></i></li>-->
-                    <li><a href="#"><i class="fas fa-toilet"></i></a></li>
+                    <li><a href="#"><i class="fas fa-camera"></i></a></li>
                     <li><a href="#about"><i class="fas fa-users"></i></a></li>
-                    <li><a href="#retailers"><i class="fas fa-store"></i></a></li>
-                    <li><a href="#faq"><i class="fas fa-question"></i></a></li>
+                    <li><a href="#price"><i class="fas fa-dollar-sign"></i></a></li>
                     <li><a href="#contact"><i class="fas fa-address-book"></i></a></li>
+                    <li><a href="#faq"><i class="fas fa-question"></i></a></li>
                 </ul>
             </nav>
         </label>
     </header>
 
     <div class="slideshow">
-        <bkg-img id="img-hand" class="bkg-img" src="img/hand.jpg">
+        <bkg-img src="img/hand.webp" alt="person sitting at desk">
         </bkg-img>
-        <div id="img-money" class="bkg-img">
-        </div>
-        <div id="img-hans" class="bkg-img">
-        </div>
-        <div id="img-bike" class="bkg-img">
-        </div>
-        <div id="img-wall1" class="bkg-img">
-        </div>
-        <div id="img-hole" class="bkg-img">
-        </div>
-        <div id="img-statue" class="bkg-img">
-        </div>
-        <div id="img-track" class="bkg-img">
-        </div>
-        <div id="img-wall" class="bkg-img">
-        </div>
+        
+        <bkg-img src="img/hans.webp" alt="person">
+        </bkg-img>
 
-        <test src="img/wall.jpg" class="bkg-img"></test>
+        <bkg-img src="img/wall1.webp" alt="wall">
+        </bkg-img>
+        <bkg-img src="img/hole.webp" alt="manholecover">
+        
+        </bkg-img>
+        <bkg-img src="img/statue.webp" alt="statue">
+        
+        </bkg-img>
 
+        <bkg-img src="img/wall.webp" alt="wall">        
+        </bkg-img>
     </div>
 
     <main>
         <article id="about">
-            <div>
-                <h2><i class="fas fa-users"></i> Lorem Ipsum, Dolor Sit Amet</h2>
-                <i class="fine-print">amet consectetur, adipisicing elit.</i>
-            </div>
+            <h2><i class="fas fa-users"></i> Lorem Ipsum, Dolor Sit Amet</h2>
+            <i class="fine-print">amet consectetur, adipisicing elit.</i>
             <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quos
                 beatae, non repellat neque delectus aperiam aspernatur nostrum
@@ -84,8 +75,31 @@
                 laboriosam sapiente.
             </p>
         </article>
-        <article id="retailers">
-            <h2><i class="fas fa-store"></i> Lorem Ipsum, Dolor Sit Amet</h2>
+        <article id="price">
+            <div id="price-slide" class="slideshow">
+                <bkg-img class="slide" src="img/money.webp" alt="money floating in space">
+                    <h2><i class="fas fa-dollar-sign"></i> Lorem Ipsum, Dolor Sit Amet</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quos
+                        beatae, non repellat neque delectus aperiam aspernatur nostrum
+                        perferendis, nobis aliquid tenetur doloremque voluptatum? Necessitatibus
+                        et explicabo amet consequuntur tempore aspernatur, quae consequatur quod
+                        eaque earum vitae nisi deserunt at voluptatem aliquam hic? Facilis,
+                        beatae dolore illum similique officia aut animi nemo quas vel ad
+                        laboriosam blanditiis, laborum soluta saepe ipsam explicabo dolorem
+                        minus? Atque nihil, inventore corporis maxime voluptatem vel aperiam
+                        amet nemo iure incidunt quas sapiente quam quisquam explicabo et earum
+                        molestias aut! Maxime quia at perspiciatis tempora nihil soluta ullam
+                        recusandae, deleniti, repudiandae sint, molestias et velit! Sunt quam
+                        reiciendis, esse quaerat quod cupiditate, suscipit eligendi nihil
+                        voluptatem excepturi praesentium quis qui corrupti. Officia magni
+                        laboriosam sapiente.
+                        </p>
+                </bkg-img>
+            </div>
+        </article>
+        <article id="contact">
+            <h2><i class="fas fa-address-book"></i> Lorem Ipsum, Dolor Sit Amet</h2>
             <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quos
             beatae, non repellat neque delectus aperiam aspernatur nostrum
@@ -122,28 +136,15 @@
             laboriosam sapiente.
             </p>
         </article>
-        <article id="contact">
-            <h2><i class="fas fa-address-book"></i> Lorem Ipsum, Dolor Sit Amet</h2>
-            <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quos
-            beatae, non repellat neque delectus aperiam aspernatur nostrum
-            perferendis, nobis aliquid tenetur doloremque voluptatum? Necessitatibus
-            et explicabo amet consequuntur tempore aspernatur, quae consequatur quod
-            eaque earum vitae nisi deserunt at voluptatem aliquam hic? Facilis,
-            beatae dolore illum similique officia aut animi nemo quas vel ad
-            laboriosam blanditiis, laborum soluta saepe ipsam explicabo dolorem
-            minus? Atque nihil, inventore corporis maxime voluptatem vel aperiam
-            amet nemo iure incidunt quas sapiente quam quisquam explicabo et earum
-            molestias aut! Maxime quia at perspiciatis tempora nihil soluta ullam
-            recusandae, deleniti, repudiandae sint, molestias et velit! Sunt quam
-            reiciendis, esse quaerat quod cupiditate, suscipit eligendi nihil
-            voluptatem excepturi praesentium quis qui corrupti. Officia magni
-            laboriosam sapiente.
-            </p>
-        </article>
     </main>
     <footer>
       <span>copyright 2020 person</span>
     </footer>
   </body>
+  <script>
+    // skriptet ville inte köras rätt ifall det inte exekverades härifrån
+    bkg_img = document.getElementsByTagName("bkg-img");
+    for (let i = 0; i<bkg_img.length; i++)
+        bkg_img[i].style.backgroundImage = "url('"+bkg_img[i].getAttribute("src")+"')";
+  </script>
 </html>

@@ -1,73 +1,18 @@
-/*
-#img-hand {
-    background-image: url("img/hand.jpg");
-}
-
-#img-money {
-    background-image: url("img/money.jpg");
-}
-
-#img-hans {
-    background-image: url("img/hans.jpg");
-}
-
-#img-bike {
-    background-image: url("img/bike.jpg");
-}
-
-#img-wall1 {
-    background-image: url("img/wall1.jpg");
-}
-
-#img-hole {
-    background-image: url("img/hole.jpg");
-}
-
-#img-statue {
-    background-image: url("img/statue.jpg");
-}
-
-#img-track {
-    background-image: url("img/track.jpg");
-}
-
-#img-wall {
-    background-image: url("img/wall.jpg");
-}
-*/
-
-.bkg-img {
+bkg-img {
     background-color: var(--lighter);
-    background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: relative;
     background-position: center;
     opacity: 75%;
+    width: 100vw;
+    height: 85vh;
 }
 
 div.slideshow {
     display: flex;
     align-items: center;
-    justify-items: center;
     flex-direction: column;
 }
 
-img.large-frame {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-}
-
-/*@media all and (orientation: portrait) {
-}*/
-
-img.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-div.bkg-img {
-    width: 100vw;
-    height: 100vh;
+#price-slide {
+    height: 50vh;
 }
