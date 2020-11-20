@@ -2,9 +2,9 @@ bkg-img {
     background-color: var(--lighter);
     background-size: cover;
     background-position: center;
-    opacity: 75%;
+    opacity: 95%;
     width: 100vw;
-    height: 85vh;
+    height: 95vh;
 }
 
 div.slideshow {
@@ -13,6 +13,39 @@ div.slideshow {
     flex-direction: column;
 }
 
+.fine-print {
+    color: var(--light);
+}
+
+.slide {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 0.5fr;
+}
+ 
+#about-slide {
+    color: var(--signal);
+    font-size: 12pt;
+    grid-column: 2;
+    grid-row: 2;
+}
+
 #price-slide {
-    height: 50vh;
+    color: var(--lighter);
+    font-size: 12pt;
+    grid-column: 4;
+    grid-row: 4;
+}
+
+#contact-slide {
+    color: var(--signal);
+    font-size: 24pt;
+    grid-column: 4;
+    grid-row: 3;
+}
+
+#faq-slide {
+    color: teal;
+    grid-column: 2;
+    grid-row: 2;
 }

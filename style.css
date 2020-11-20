@@ -18,7 +18,6 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-align: center;
 }
 
 body {
@@ -179,30 +178,11 @@ nav a:hover {
 
 }
 
-main h2 {
-  margin-top: 5rem;
-}
-
-main p {
-  margin-top: 2rem;
-  line-height: 1.6;
-}
-
-main h2 + P {
-  margin-top: 2rem;
-}
-
-main p + P {
-  margin-top: 1rem;
-}
-
-article {
-  padding-top: 2vh;
-  padding-bottom: 32vh;
+p {
+  text-align: justify;
 }
 
 footer {
-  margin-top: 8vh;
   padding-top: 4vh;
   padding-bottom: 4vh;
   text-align: center;
@@ -215,6 +195,6 @@ footer {
   color: var(--signal);
 }
 
-.slide {
-  color: var(--signal);
+h3 {
+  text-align: left;
 }
