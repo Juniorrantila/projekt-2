@@ -4,7 +4,7 @@ bkg-img {
     background-position: center;
     opacity: 95%;
     width: 100vw;
-    height: 95vh;
+    height: 100vh;
 }
 
 div.slideshow {
@@ -17,22 +17,35 @@ div.slideshow {
     color: var(--light);
 }
 
-.slide {
+.bkg-img-slide {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 0.5fr 1fr 1fr 1fr 0.5fr;
 }
- 
+
+.slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50vw;
+    padding: 20px;
+    font-size: 20pt;
+    text-align: justify;
+}
+.slide p {
+    font-size: 24pt;
+    text-align: justify;
+}
+
 #about-slide {
     color: var(--signal);
-    font-size: 12pt;
     grid-column: 2;
     grid-row: 2;
 }
 
 #price-slide {
     color: var(--lighter);
-    font-size: 12pt;
     grid-column: 4;
     grid-row: 4;
 }

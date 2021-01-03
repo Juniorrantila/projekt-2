@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Projekt företagshemsida">
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-      crossorigin="anonymous"
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="images.css"/>
-    <script src="custom_tag.js"></script>
+    <script async src="custom_tag.js"></script>
     <title>Projekt 2</title>
-  </head>
-  <body>
-
+</head>
+<body>
+        
     <header>
         <label class="nav-area">
-            <i id="hamburger" class="fas fa-bars"></i>
-            <input class="nav-toggle" type="checkbox" />
-            <nav>
+            <input class="nav-toggle" type="checkbox" >
+            <nav class="haze">
                 <ul>
                     <li><a href="#"><i class="fas fa-camera"></i></a></li>
                     <li><a href="#about"><i class="fas fa-users"></i></a></li>
@@ -30,6 +30,7 @@
                     <li><a href="#faq"><i class="fas fa-question"></i></a></li>
                 </ul>
             </nav>
+            <i id="hamburger" class="hamburger fas fa-bars"></i>
         </label>
     </header>
 
@@ -40,7 +41,7 @@
         <bkg-img src="img/wall1.jpg" alt="picture of wall"></bkg-img>
 
         <bkg-img id="about" src="img/hans.jpg" alt="picture of person">
-            <section id="about-slide">
+            <section id="about-slide" class="glass slide">
                 <h3><i class="fas fa-users"></i> About us</h3>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -52,7 +53,7 @@
         </bkg-img>
 
         <bkg-img id="price" src="img/money.jpg" alt="money floating in space">
-            <section id="price-slide">
+            <section id="price-slide" class="glass slide">
                 <h3><i class="fas fa-dollar-sign"></i> Price</h3>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -64,14 +65,14 @@
         </bkg-img>
 
         <bkg-img id="contact" src="img/statue.jpg" alt="picture of statue">
-            <section id="contact-slide">
+            <section id="contact-slide" class="glass slide">
                 <h3><i class="fas fa-address-book"></i> Contact</h3>
                 <span>contact[at]mail.tld</span>
             </section>
         </bkg-img>
         
         <bkg-img id="faq" src="img/wall.jpg" alt="picture of wall">
-            <section id="faq-slide">
+            <section id="faq-slide" class="glass slide">
                 <h3><i class="fas fa-question"></i> FAQ</h3>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -86,5 +87,5 @@
     <footer>
         <span>copyright 2020 person</span>
     </footer>
-    </body>
+</body>
 </html>
