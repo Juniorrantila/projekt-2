@@ -1,6 +1,9 @@
 nav a:hover {
     transition: 100ms;
-    color: var(--signal);
+    color: var(--purp);
+}
+nav a {
+    color: var(--blue);
 }
 
 .nav-toggle {

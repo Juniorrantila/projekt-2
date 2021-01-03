@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
 :root {
-  --darker: #5E6472;
-  --dark:   #855c5c;
-  --mid:    #abebde;
-  --light:  #5e64728b;
+
+  --purp: rgb(85, 26, 139);
+  --blue:   #aafaea;
+
+  --darker: #2f3d65;
+  --dark:   #834e87;
   --lighter:#FAF3DD;
   --signal: #ff0088;
 }
@@ -12,6 +14,11 @@
 html {
   scroll-behavior: smooth;
   min-height: 100vh;
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  width: 0;
 }
 
 * {
@@ -27,44 +34,36 @@ body {
 }
 
 ::selection {
-  background-color: var(--mid);
+  background-color: var(--blue);
   color: var(--signal);
-}
-
-html {
-  scrollbar-width: none;
-}
-
-::-webkit-scrollbar {
-  width: 0;
 }
 
 p {
   text-align: justify;
+  font-family: 'Roboto Slab', serif;
+
+}
+
+h1 h2 h3 h4 h5 h6 {
+  font-family: 'Kanit', sans-serif;
 }
 
 footer {
-  padding-top: 4vh;
-  padding-bottom: 4vh;
+  padding: 4vh 4vh;
   text-align: center;
   background: var(--darker);
-  color: var(--lighter);
+  color: var(--lighter);  
 }
-
 
 #hamburger {
   color: var(--signal);
 }
 
-h3 {
-  text-align: left;
-}
-
 .glass {
-  backdrop-filter: blur(10px) brightness(110%);
+  backdrop-filter: blur(10pt) brightness(110%);
 }
 
 .haze {
-  opacity: 95%;
-  backdrop-filter: blur(20px) brightness(125%) saturate(200%);
+  opacity: 100%;
+  backdrop-filter: blur(10pt) brightness(125%) saturate(125%);
 }

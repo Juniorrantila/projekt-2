@@ -5,15 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Projekt företagshemsida">
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-    crossorigin="anonymous"
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="images.css"/>
     <script async src="custom_tag.js"></script>
+    <script async src="hue.js"></script>
+
     <title>Projekt 2</title>
 </head>
 <body>
@@ -42,7 +47,7 @@
 
         <bkg-img id="about" src="img/hans.jpg" alt="picture of person">
             <section id="about-slide" class="glass slide">
-                <h3><i class="fas fa-users"></i> About us</h3>
+                <h2><i class="fas fa-users"></i> About us</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Officia facere temporibus totam? Cumque adipisci, illo
@@ -54,7 +59,7 @@
 
         <bkg-img id="price" src="img/money.jpg" alt="money floating in space">
             <section id="price-slide" class="glass slide">
-                <h3><i class="fas fa-dollar-sign"></i> Price</h3>
+                <h2><i class="fas fa-dollar-sign"></i> Price</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Officia facere temporibus totam? Cumque adipisci, illo
@@ -66,14 +71,14 @@
 
         <bkg-img id="contact" src="img/statue.jpg" alt="picture of statue">
             <section id="contact-slide" class="glass slide">
-                <h3><i class="fas fa-address-book"></i> Contact</h3>
+                <h2><i class="fas fa-address-book"></i> Contact</h2>
                 <span>contact[at]mail.tld</span>
             </section>
         </bkg-img>
         
         <bkg-img id="faq" src="img/wall.jpg" alt="picture of wall">
             <section id="faq-slide" class="glass slide">
-                <h3><i class="fas fa-question"></i> FAQ</h3>
+                <h2><i class="fas fa-question"></i> FAQ</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Officia facere temporibus totam? Cumque adipisci, illo
@@ -84,8 +89,10 @@
         </bkg-img>
 
     </main>
+    
     <footer>
         <span>copyright 2020 person</span>
     </footer>
+    
 </body>
 </html>
