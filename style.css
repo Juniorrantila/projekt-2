@@ -77,3 +77,8 @@ footer {
   backdrop-filter: blur(10pt) brightness(125%) saturate(125%);
   -webkit-backdrop-filter: blur(10pt) brightness(125%) saturate(125%);
 }
+
+.fine-print {
+  padding-top: 16px;
+  opacity: 10%;
+}

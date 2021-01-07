@@ -16,13 +16,17 @@ div.slideshow {
 }
 
 .fine-print {
-    color: var(--light);
+    opacity: 10%;
 }
 
 .bkg-img-slide {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.bkg-img-slide h2 {
+    padding-bottom: 0.5em;
 }
 
 .slide {
