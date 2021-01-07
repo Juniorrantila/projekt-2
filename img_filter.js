@@ -6,7 +6,10 @@ window.onscroll = () => {
 
     sheet.replaceSync(
         "bkg-img {"+
-            "filter: " + `blur(${val}pt) ` + `hue-rotate(${val}rad) ` + `saturate(${100-val*50}%) `+ " invert(10%) brightness(125%);"+
+            "filter: " + 
+            `blur(${val}pt) ` +
+            `hue-rotate(${val}rad) ` +
+            `saturate(${100-val*50}%) `+
         "}"
     );
 }

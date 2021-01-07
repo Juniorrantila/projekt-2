@@ -6,7 +6,7 @@ bkg-img {
     opacity: 95%;
     width: 100vw;
     height: 100vh;
-    filter: hue-rotate(0) invert(10%) brightness(125%); /*Gets modified by script*/
+    filter: blur(0) hue-rotate(0) saturate(100%); /*modified by script*/
 }
 
 div.slideshow {
@@ -22,7 +22,7 @@ div.slideshow {
 .bkg-img-slide {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 1fr 1fr 0.5fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .slide {
@@ -30,13 +30,13 @@ div.slideshow {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 50vw;
-    padding: 20px;
-    font-size: 1rem;
+    min-width: 50vw;
+    padding: 3em;
+    font-size: 0.8em;
     text-align: justify;
 }
 .slide h2 {
-    font-size: 2rem;
+    font-size: 3em;
 }
 .slide p {
     font-size: 1.5em;
@@ -65,5 +65,5 @@ div.slideshow {
 #faq-slide {
     color: teal;
     grid-column: 3;
-    grid-row: 3;
+    grid-row: 3;    
 }

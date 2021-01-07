@@ -1,5 +1,5 @@
 nav a:hover {
-    transition: 100ms;
+    transition: 125ms;
     color: var(--purp);
 }
 nav a {
@@ -16,6 +16,7 @@ nav a {
     top: 2rem;
     left: 2.5rem;
     font-size: 2.5rem;
+
 }
 
 nav {
@@ -24,10 +25,8 @@ nav {
     height: 100vh;
 }
 
-@media all and (orientation: portrait){
-    nav {
-        transition: 600ms ease-in-out;
-    }
+a {
+    text-decoration: none;
 }
 
 nav ul {
@@ -39,6 +38,9 @@ nav ul {
 }
 
 @media all and (orientation: portrait){
+    nav {
+        transition: 600ms ease-in-out;
+    }
     nav ul {
         flex-direction: column;
     }
@@ -52,6 +54,30 @@ nav ul {
     }
     nav ul {
         flex-direction: row;
+    }
+    .about-link.landscape:before {
+        content: 'ABOUT'
+    }
+    .about-link.portrait:before {
+        content: ''
+    }
+    .price-link.landscape:before {
+        content: 'PRICE'
+    }
+    .price-link.portrait:before {
+        content: ''
+    }
+    .contact-link.landscape:before {
+        content: 'CONTACT'
+    }
+    .contact-link.portrait:before {
+        content: ''
+    }
+    .faq-link.landscape:before {
+        content: 'FAQ'
+    }
+    .faq-link.portrait:before {
+        content: ''
     }
 }
 

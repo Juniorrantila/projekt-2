@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="images.css"/>
-    <script async src="custom_tag.js"></script>
-    <script async src="hue.js"></script>
+    <script defer src="bkg_img_tag.js"></script>
+    <script async src="img_filter.js"></script>
 
     <title>Projekt 2</title>
 </head>
@@ -29,21 +29,31 @@
             <nav class="haze">
                 <ul>
                     <li><a href="#"><i class="fas fa-camera"></i></a></li>
-                    <li><a href="#about"><i class="fas fa-users"></i></a></li>
-                    <li><a href="#price"><i class="fas fa-dollar-sign"></i></a></li>
-                    <li><a href="#contact"><i class="fas fa-address-book"></i></a></li>
-                    <li><a href="#faq"><i class="fas fa-question"></i></a></li>
+                    <li><a href="#about">
+                        <span class="about-link landscape"></span>
+                        <span class="about-link portrait fas fa-users"></span>
+                    </a></li>
+                    <li><a href="#price">
+                        <span class="price-link landscape"></span>
+                        <span class="price-link portrait fas fa-dollar-sign"></span>
+                    </a></li>
+                    <li><a href="#contact">
+                        <span class="contact-link landscape"></span>
+                        <span class="contact-link portrait fas fa-address-book"></span>
+                    </a></li>
+                    <li><a href="#faq">
+                        <span class="faq-link landscape"></span>
+                        <span class="faq-link portrait fas fa-question"></span>
+                    </a></li>
                 </ul>
             </nav>
-            <i id="hamburger" class="hamburger fas fa-bars"></i>
+            <span id="hamburger" class="hamburger fas fa-bars"></span>
         </label>
     </header>
 
     <main class="slideshow">
 
-        <bkg-img src="img/hand.jpg" alt="person sitting at table"></bkg-img>
-
-        <bkg-img src="img/wall1.jpg" alt="picture of wall"></bkg-img>
+        <bkg-img id="front" src="img/hand.jpg" alt="person sitting at table"></bkg-img>
 
         <bkg-img id="about" src="img/hans.jpg" alt="picture of person">
             <section id="about-slide" class="glass slide">
@@ -56,6 +66,8 @@
                 </p>
             </section>
         </bkg-img>
+
+        <bkg-img src="img/wall1.jpg" alt="picture of wall"></bkg-img>
 
         <bkg-img id="price" src="img/money.jpg" alt="money floating in space">
             <section id="price-slide" class="glass slide">
