@@ -15,10 +15,6 @@ div.slideshow {
     flex-direction: column;
 }
 
-.fine-print {
-    opacity: 10%;
-}
-
 .bkg-img-slide {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -35,10 +31,18 @@ div.slideshow {
     justify-content: center;
     flex-direction: column;
     min-width: 50vw;
+    max-height: 100vh;
     padding: 3em;
     font-size: 0.8em;
     text-align: justify;
 }
+
+@media all and (orientation: portrait){
+    .slide {
+        min-width: 100vw;
+    }
+}
+
 .slide h2 {
     font-size: 3em;
 }
